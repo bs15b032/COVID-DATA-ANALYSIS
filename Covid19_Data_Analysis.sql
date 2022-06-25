@@ -43,11 +43,11 @@ order by DeathCount desc
 
 --showing countries with highest Death Count per population
 
---select continent, max(cast(total_deaths as int)) as DeathCount
---from port..covid
---where continent is not null
---group by continent
---order by DeathCount desc
+select continent, max(cast(total_deaths as int)) as DeathCount
+from port..covid
+where continent is not null
+group by continent
+order by DeathCount desc
 
 
 --Global Numbers
